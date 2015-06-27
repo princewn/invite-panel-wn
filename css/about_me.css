@@ -1,0 +1,467 @@
+/*内容分类*/
+.post {
+font-size: 14px;
+}
+#posts.posts {
+list-style-type: none;
+margin: 0 0 0 85px;
+padding: 0;
+}
+#posts.posts>.post_container {
+margin: 0 0 20px 0;
+}
+.post.new_post .post_buttons {
+padding: 0 1px 0 7px;
+}
+.post.new_post {
+text-align: center;
+}
+.post.post_full {
+font-size: 14px;
+}
+/*小图标*/
+.post_avatar {
+border-radius: 3px;
+background-color: #36465d;
+text-decoration: none;
+position: absolute;
+overflow: visible;
+display: block;
+height: 64px;
+width: 64px;
+left: -85px;
+top: 0;
+}
+/*
+因为写在便签中的style
+#first-post-avatar_absolute {
+position: absolute;
+top: 0;
+left:100px;!important
+}*/
+.post_avatar .post_avatar_wrapper {
+height: 100%;
+width: 100%;
+}
+.post_avatar .post_avatar_link {
+background: #36465d 50% 50% no-repeat;
+display: block;
+height: 100%;
+width: 100%;
+border-radius: 3px;
+background-size: cover;
+overflow: visible;
+}
+.post_avatar_link {
+-webkit-backface-visibility: visible;
+}
+.post_avatar .post_avatar_image, .post_avatar .post_sub_avatar_image {
+display: block;
+opacity: 0;
+pointer-events: none;
+}
+
+
+.post.post_full .post_header, .post.post_full .post_footer, .post.post_full .post_answer, .post.post_full .post_body, .post.post_full .post_title {
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.post_full:hover .post_permalink {
+-webkit-transition: border-width 150ms ease-in,opacity 0 ease-in 0;
+-moz-transition: border-width 150ms ease-in,opacity 0ms ease-in 0ms;
+transition: border-width 150ms ease-in,opacity 0ms ease-in 0ms;
+opacity: 1;
+border-width: 8px;
+}
+.post_full .post_permalink {
+border-color: #36465d #36465d transparent transparent;
+border-radius: 0 0 0 5px;
+border-style: solid;
+position: absolute;
+border-width: 2px;
+background: #ccc;
+display: block;
+opacity: 0;
+height: 0;
+width: 0;
+right: 0;
+top: 0;
+-webkit-transition: border-width 150ms ease-in,opacity 0 ease-in 150ms;
+-moz-transition: border-width 150ms ease-in,opacity 0ms ease-in 150ms;
+transition: border-width 150ms ease-in,opacity 0ms ease-in 150ms;
+}
+
+
+.post_full .post_header, .post_full .post_header .post_info .post_info_link {
+color: #a1a1a1;
+word-wrap: normal;
+white-space: nowrap;
+}
+.post_full .post_header {
+font-size: 13px;
+margin: -3px 0 13px;
+line-height: 20px;
+height: 20px;
+vertical-align: middle;
+text-rendering: optimizeLegibility;
+}
+.post .post_header {
+position: relative;
+}
+.post_full.no_source .post_info {
+max-width: 100%;
+}
+.post_full .post_info {
+float: left;
+max-width: 325px;
+padding-right: 10px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.post .post_info {
+font-weight: 700;
+}
+.post_full.no_source .post_info_fence.has_follow_button {
+max-width: 415px;
+}
+.post_full.no_source .post_info_fence {
+max-width: 483px;
+}
+.post_full .post_info_fence.has_follow_button {
+max-width: 242px;
+}
+.post_full.is_reblog.no_source .post_info_fence>a {
+max-width: 300px;
+}
+.post_full .post_header, .post_full .post_header .post_info .post_info_link {
+color: #a1a1a1;
+word-wrap: normal;
+white-space: nowrap;
+}
+.post_full.is_reblog .post_info_fence>a {
+display: inline-block;
+text-overflow: ellipsis;
+overflow: hidden;
+vertical-align: bottom;
+max-width: 150px;
+}
+.post_full .post_info .post_info_fence .reblog_source {
+display: inline;
+}
+.post .post_info .reblog_icon {
+display: inline-block;
+height: 0;
+width: 0;
+padding: 10px;
+overflow: hidden;
+background: -397px -93px url('/tumblrwn/images/dashboard_master_sprite.png') no-repeat;
+opacity: .31;
+text-indent: -999em;
+vertical-align: -5px;
+margin: 0 2px;
+z-index:100;
+}
+.post_full .post_header, .post_full .post_header .post_info .post_info_link {
+color: #a1a1a1;
+word-wrap: normal;
+white-space: nowrap;
+}
+.post .post_header .post_info_link {
+color: #a1a1a1;
+text-decoration: none;
+background-image: none;
+padding-bottom: 0;
+}
+
+.post_full .post_header .post_info .reblog_follow_button {
+color: #fff;
+}
+
+.reblog_follow_button {
+-webkit-transform-origin: 20px 50%;
+-moz-transform-origin: 20px 50%;
+-ms-transform-origin: 20px 50%;
+-o-transform-origin: 20px 50%;
+transform-origin: 20px 50%;
+text-transform: uppercase;
+vertical-align: baseline;
+box-sizing: border-box;
+text-decoration: none;
+display: inline-block;
+white-space: nowrap;
+text-align: center;
+position: relative;
+background: 0 0;
+padding: 0 3px 0 9px;
+color: #fff;
+border-radius: 2px;
+line-height: 12px;
+font-size: 8px;
+margin: 0 4px;
+height: 12px;
+width: 60px;
+opacity: 1;
+top: 3px;
+}
+.reblog_follow_button i {
+position: absolute;
+font-style: normal;
+font-weight: 700;
+text-indent: -999em;
+border-radius: 2px;
+line-height: 12px;
+max-width: 14px;
+height: 12px;
+top: -1px;
+bottom: 0;
+left: 0;
+-webkit-transition-property: max-width;
+-moz-transition-property: max-width;
+transition-property: max-width;
+-webkit-transition-duration: 0;
+-moz-transition-duration: 0;
+transition-duration: 0;
+-webkit-transition-timing-function: ease;
+-moz-transition-timing-function: ease;
+transition-timing-function: ease;
+}
+
+.reblog_follow_button:not(.icon_follow_rounded_small)::before {
+background: #a1a1a1 url('/tumblrwn/images/dashboard_master_sprite.png') -400px -39px no-repeat;
+content: '';
+}
+.reblog_follow_button.active i, .reblog_follow_button:hover i, .reblog_follow_button.onboard i {
+-webkit-transition-duration: 200ms;
+-moz-transition-duration: 200ms;
+transition-duration: 200ms;
+background-color: #a1a1a1;
+max-width: 200px;
+padding: 0 3px;
+text-indent: 0;
+}
+
+.reblog_follow_button:before {
+border-radius: 2px;
+position: absolute;
+margin-top: -7px;
+height: 12px;
+width: 12px;
+right: auto;
+bottom: 0;
+left: 0;
+top: 50%;
+}
+
+
+
+.auto-pagination-loader {
+padding: 15px 0 35px;
+text-decoration: none;
+color: #fff;
+text-align: center;
+font-weight: 700;
+font-size: 34px;
+display: block;
+margin: 0 auto;
+width: 900px;
+}
+
+
+
+.post_full .post_media+.post_body:not(:empty) {
+margin-top: 15px;
+}
+
+.post-typography-update .post .post-content a, .post-typography-update .post .reblog-list a, .post-typography-update .post .post_body a {
+background-color: rgba(68,68,68,0);
+background-image: -webkit-linear-gradient(top,rgba(68,68,68,0)50%,rgba(68,68,68,.25)50%);
+background-image: linear-gradient(to bottom,rgba(68,68,68,0)50%,rgba(68,68,68,.25)50%);
+color: #444;
+text-decoration: none;
+background-repeat: repeat-x;
+background-size: 1em 2px;
+background-position: 0 1.15em;
+padding-bottom: .15em;
+}
+.post_full .post_content a {
+text-decoration: underline;
+}
+.post-forms-glass {
+display: block;
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 996;
+pointer-events: none;
+background-color: rgba(54,70,93,.95);
+}
+
+
+/**********************************************/
+
+
+.post.new_post {
+position: relative;
+min-height: 99px;
+width: auto;
+height: auto;
+padding: 0;
+text-align: center;
+clear: both;
+background-color: #fff;
+word-wrap: break-word;
+}
+.post.post_full {
+width: 540px;
+font-size: 14px;
+background: #fff;
+padding: 15px 0;
+word-wrap: break-word;
+border-radius: 3px;
+}
+.post {
+position: relative;
+font-size: 14px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.post.new_post .post_buttons {
+padding: 0 1px 0 7px;
+}
+.post.new_post .new_post_label {
+color: #696969;
+font-size: 15px;
+font-weight: normal;
+float: left;
+position: relative;
+top: 0;
+left: 0;
+width: 75px;
+height: 20px;
+padding: 61px 1px 18px 0;
+color: #696969;
+font-size: 15px;
+opacity: .9;
+font-weight: normal;
+text-decoration: none;
+background: transparent url(/images/post_type_div.png?f3b5918095c6e5f5fc2d8ada71dc3b8e) no-repeat right center;
+}
+.new_post_label i.icon_post_text {
+color: #444;
+}
+.new_post_label i {
+position: absolute;
+text-align: left;
+top: 5px;
+left: 0;
+width: 48px;
+height: 48px;
+padding: 0 14px;
+margin: 0 auto;
+font-size: 48px;
+text-align: center;
+line-height: 62px;
+-webkit-transition-property: line-height;
+-moz-transition-property: line-height;
+-ms-transition-property: line-height;
+-o-transition-property: line-height;
+transition-property: line-height;
+-webkit-transition-duration: .08s;
+-moz-transition-duration: .08s;
+-ms-transition-duration: .08s;
+-o-transition-duration: .08s;
+transition-duration: .08s;
+-webkit-transition-timing-function: linear;
+-moz-transition-timing-function: linear;
+-ms-transition-timing-function: linear;
+-o-transition-timing-function: linear;
+transition-timing-function: linear;
+-webkit-transition-delay: 0s;
+-moz-transition-delay: 0s;
+-ms-transition-delay: 0s;
+-o-transition-delay: 0s;
+transition-delay: 0s;
+}
+
+
+.icon_post_text:before {
+content: "\f142";
+}
+
+.new_post_label_text {
+display: block;
+width: 75px;
+text-align: center;
+}
+.new_post_label i.icon_post_photo {
+color: #d95e40;
+}
+
+.icon_post_photo:before {
+content: "\f13e";
+}
+.new_post_label i.icon_post_quote {
+color: #f2992e;
+}
+
+.icon_post_quote:before {
+content: "\f140";
+}
+
+.icon_post_quote:before {
+content: "\f140";
+}
+.new_post_label i.icon_post_link {
+color: #56bc8a;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+line-height: 1;
+}
+.icon_post_link:before {
+content: "\f13c";
+}
+.new_post_label i.icon_post_chat {
+color: #529ecc;
+}
+
+.icon_post_chat:before {
+content: "\f13a";
+}
+
+.icon_post_chat:before {
+content: "\f13a";
+}
+.new_post_label i.icon_post_audio {
+color: #a77dc2;
+}
+
+
+.icon_post_audio:before {
+content: "\f138";
+}
+.post.new_post .new_post_label:last-child {
+background: transparent;
+}
+.new_post_label i.icon_post_video {
+color: #748089;
+}
+.post.editing.active .post_avatar, .post-avatar--static .post_avatar {
+position: absolute!important;
+left: -85px!important;
+top: 0!important;
+}
+#posts.posts>.post_container {
+margin: 0 0 20px 0;
+}
+
+
+#posts.posts>li:last-child {
+margin: 0;
+}
